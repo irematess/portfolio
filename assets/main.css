@@ -1,0 +1,15 @@
+@font-face{
+    font-family: 'mazius';
+    src: url("./fonts/MAZIUSREVIEW20.09-Italic.otf");
+}
+
+@font-face {
+    font-family: 'neutral-face';
+    src: url("./fonts/NeutralFace.otf");
+}
+
+@font-face {
+    font-family: 'avenir';
+    src: url("./fonts/Avenir.otf");
+}
+

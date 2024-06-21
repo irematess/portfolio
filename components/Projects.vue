@@ -31,21 +31,21 @@ const PROJECTS = [
 ]
 </script>
 <template>
-    <article class="container mx-auto mb-72 max-2xl:px-8" id="project">
+    <article class="container mx-auto mb-72 max-lg:mb-36 max-2xl:px-8" id="project">
         <h3 class="mt-60 flex justify-center text-white font-mazius text-4xl">projects</h3>
         <p class="mt-6 mb-28 flex text-center justify-center text-xl text-white font-avenir font-thin">Some things I’ve worked (or am working) on</p>
         <div class="flex flex-col gap-36 projects">
         <!-- Project -->
-            <div class="box grid grid-cols-2 gap-8 text-white" v-for="(project, index) in PROJECTS" :key="index">  
+            <div class="box max-lg:flex max-lg:flex-col grid grid-cols-2 gap-8 text-white" v-for="(project, index) in PROJECTS" :key="index">  
                 <img :src="`/img/${project.thumbnail}.png`">
                 <div class="flex flex-col justify-center gap-4">
                     <p class="font-mazius text-4xl ">{{project.title}}</p>
                     <p class="font-avenir text-xl">{{project.desc}}</p>
-                    <div class="flex justify-between sm:flex-col gap-2">
+                    <div class="flex justify-between gap-2">
                         <div class="flex gap-4">
                             <img v-for="(t, index) in project.tech" :key="index" :src="`/img/${t}.png`" class="w-6 h-6">
                         </div>
-                        <div class="flex gap-6 text-nowrap">
+                        <div class="flex gap-6 max-lg:gap-2 text-nowrap">
                             <a :href=project.code class="bg-[#4F5B58] px-4 py-1 rounded-full">VIEW CODE</a>
                             <a :href=project.demo class="bg-[#4F5B58] px-4 py-1 rounded-full" v-if="project.demo">VIEW DEMO</a>
                         </div>

@@ -2,10 +2,10 @@
 
 </script>
 <template>
-    <article class="container mx-auto text-white text-center" id="getintouch">
+    <article class="container max-lg:w-5/6 mx-auto text-white text-center" id="getintouch">
         <h3 class="font-mazius text-4xl mb-4">get in touch</h3>
         <p class="text-xl font-avenir mb-4">I’m currently open to new opportunities, inbox is always open! Find me everywhere @irematees16</p>
-        <div class="flex gap-16 text-4xl justify-center">
+        <div class="flex gap-16 max-lg:gap-0 max-lg:justify-between text-4xl justify-center">
             <a href="to:irematees16@gmail.com"><i class="fa-solid fa-m"></i></a>
             <a href="https://www.linkedin.com/in/irematees/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/irematess"><i class="fa-brands fa-github"></i></a>
